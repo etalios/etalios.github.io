@@ -14,7 +14,7 @@ export const pageQuery = graphql`
 `;
 
 const NotFoundPage = props => {
-  const { title, author } = props.site.siteMetadata;
+  const { title, author } = props.data.site.siteMetadata;
 
   return (
     <Layout title={title} author={author}>
