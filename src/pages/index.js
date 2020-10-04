@@ -15,7 +15,6 @@ export const pageQuery = graphql`
 `;
 
 const Home = props => {
-  console.log(props);
   const { title, author } = props.data.site.siteMetadata;
   return (
     <Layout title={title} author={author}>
