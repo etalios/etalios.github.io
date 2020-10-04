@@ -14,13 +14,14 @@
     "test": "echo \"There is no tests.\""
   },
   "dependencies": {
-    "gatsby": "^2.24.47",
-    "gatsby-plugin-postcss": "^2.3.11",
-    "gatsby-plugin-react-helmet": "^3.3.10",
+    "gatsby": "^2.24.67",
+    "gatsby-plugin-google-analytics": "^2.3.15",
+    "gatsby-plugin-postcss": "^2.3.13",
+    "gatsby-plugin-react-helmet": "^3.3.12",
     "gatsby-remark-code-titles": "^1.1.0",
-    "gatsby-remark-prismjs": "^3.5.10",
-    "gatsby-source-filesystem": "^2.3.24",
-    "gatsby-transformer-remark": "^2.8.28",
+    "gatsby-remark-prismjs": "^3.5.15",
+    "gatsby-source-filesystem": "^2.3.32",
+    "gatsby-transformer-remark": "^2.8.37",
     "prismjs": "^1.21.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -28,9 +29,9 @@
     "typeface-anton": "0.0.72"
   },
   "devDependencies": {
-    "dayjs": "^1.8.34",
+    "dayjs": "^1.9.1",
     "prettier": "2.0.5",
-    "tailwindcss": "^1.7.3"
+    "tailwindcss": "^1.8.10"
   },
   "repository": {
     "type": "git",

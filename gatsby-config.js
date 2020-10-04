@@ -5,6 +5,14 @@ module.exports = {
     author: "etalios",
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-179593047-1",
+        sampleRate: 5,
+        siteSpeedSampleRate: 10,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
