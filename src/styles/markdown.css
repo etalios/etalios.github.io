@@ -24,6 +24,10 @@
   @apply ml-8 pt-2 pb-2;
 }
 
+.markdown p {
+  @apply pb-6;
+}
+
 /* blockquote */
 
 .markdown blockquote {

@@ -37,22 +37,24 @@ const PostTemplate = ({ data, pageContext }) => {
 
   return (
     <Layout title={title} author={author}>
-      <article className="mx-5">
+      <article className="px-5 max-w-screen-md mx-auto">
         <SEO title={frontmatter.title} description={excerpt} />
         <section>
           <h1 className="article__title">{frontmatter.title}</h1>
-          <div className="flex justify-end">
-            <div className="article__date pt-2">
-              {frontmatter.updatedAt}更新
+          <div className="flex pt-5">
+            <div className="flex flex-row flex-grow">
+              <div className="flex-row flex-grow">
+                {frontmatter.tags.map(tag => (
+                  <Tag key={tag} name={tag} url="#" />
+                ))}
+              </div>
+              <div className="article__date flex-grow-0">
+                {frontmatter.updatedAt}更新
+              </div>
             </div>
           </div>
-          <div className="pt-2">
-            {frontmatter.tags.map(tag => (
-              <Tag key={tag} name={tag} url="#" />
-            ))}
-          </div>
           <section
-            className="markdown mt-10"
+            className="markdown mt-5"
             dangerouslySetInnerHTML={{ __html: html }}
           ></section>
         </section>
