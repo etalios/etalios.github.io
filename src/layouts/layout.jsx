@@ -20,7 +20,7 @@ const Layout = props => {
   return (
     <div className="flex flex-col h-screen justify-between">
       <Header title={title} />
-      <main className="mb-auto flex flex-col container max-w-screen-lg mx-auto pb-10">
+      <main className="mb-auto flex flex-col container max-w-screen-md mx-auto pb-10">
         {children}
       </main>
       <footer className="flex justify-center p-8 bg-gray-200">

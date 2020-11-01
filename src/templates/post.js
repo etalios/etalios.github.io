@@ -37,7 +37,7 @@ const PostTemplate = ({ data, pageContext }) => {
 
   return (
     <Layout title={title} author={author}>
-      <article className="px-5 max-w-screen-md mx-auto">
+      <article className="px-5 max-w-screen-md">
         <SEO title={frontmatter.title} description={excerpt} />
         <section>
           <h1 className="article__title">{frontmatter.title}</h1>
